@@ -17,6 +17,15 @@
       <button data-mdb-ripple-color="aqua" type="submit" class="btn primary btn-light">Login</button>
     </div>
   </div>
+
+<mdb-dropdown tag="li" class="nav-item">
+            <mdb-dropdown-toggle tag="a" navLink color="danger" slot="toggle" waves-fixed>Dropdown</mdb-dropdown-toggle>
+            <mdb-dropdown-menu>
+              <mdb-dropdown-item>Action</mdb-dropdown-item>
+              <mdb-dropdown-item>Another action</mdb-dropdown-item>
+              <mdb-dropdown-item>Something else here</mdb-dropdown-item>
+            </mdb-dropdown-menu>
+          </mdb-dropdown>
   <!-- </div> -->
 
 </form>
@@ -24,6 +33,6 @@
 
 <script>
 module.exports = {
-name:'Log'    
+name:'Log',
 }
 </script>

@@ -74,9 +74,6 @@
 module.exports = {
       components: {
             mdbBtn: mdb.MDBBtn,
-            // mdbChart:mdb.MDBLineChart,
-            mdbContainer:mdb.MDBContainer,
-                        mdbSimpleChart:mdb.MDBSimpleChart,
     },
     
   mounted(){

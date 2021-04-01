@@ -1,66 +1,68 @@
-
 <!--- should create a version like https://startbootstrap.com/previews/sb-admin/ --->
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <title>MDB Vue App</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
-    <!-- Below commented lines are using CDN-->
-    
-      <!-- <link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet" />
-      <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdb-vue-ui-kit/css/mdb.min.css"> -->
-      <!-- MDB -->
-      <!-- <script src="https://unpkg.com/vue@next"></script>
-      <script src="https://cdn.jsdelivr.net/npm/http-vue-loader@latest"></script>
-      <script src="https://unpkg.com/vue3-sfc-loader/dist/vue3-sfc-loader.js"></script>
-      <script src="https://unpkg.com/vue-router@4"></script>
-      <script src="https://cdn.jsdelivr.net/npm/mdb-vue-ui-kit/js/mdb.umd.min.js"></script> -->
+<head>
+  <!-- Required meta tags -->
+  <title>MDB Vue App</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+  <!-- Below commented lines are using CDN-->
+  <!--       
+      <link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdb-vue-ui-kit/css/mdb.min.css"> 
+      <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />-->
+  <!-- MDB -->
+  <!-- <script src="https://unpkg.com/vue@next"></script>
+        <script src="https://cdn.jsdelivr.net/npm/http-vue-loader@latest"></script>
+        <script src="https://unpkg.com/vue3-sfc-loader/dist/vue3-sfc-loader.js"></script>
+        <script src="https://unpkg.com/vue-router@4"></script>
+        <script src="https://cdn.jsdelivr.net/npm/mdb-vue-ui-kit/js/mdb.umd.min.js"></script> -->
 
 
-    <link href="assets/css/all.min.css" rel="stylesheet" />
-    <link href="assets/css/fonts.css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/mdb.min.css">
+  <link href="assets/css/font-awesome.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/mdb.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
 
-<!-- MDB -->
-    <script src="assets/js/vue.js"></script>
-    <script src="assets/js/vueLoader.js"></script>
-    <script src="assets/js/vue3sfcLoader.js"></script>
-    <script src="assets/js/vueRouter.js"></script>
-    <script src="assets/js/mdb.min.js"></script>
+  <!-- MDB -->
+  <script src="assets/js/vue.js"></script>
+  <script src="assets/js/vueLoader.js"></script>
+  <script src="assets/js/vue3sfcLoader.js"></script>
+  <script src="assets/js/vueRouter.js"></script>
+  <script src="assets/js/mdb.min.js"></script>
 
-<script>
-  const options = {
-            moduleCache: {
-                vue: Vue
-            },
-            async getFile(url) {
-                const res = await fetch(url);
-                if (!res.ok)
-                    throw Object.assign(new Error(res.statusText + ' ' + url), { res });
-                return await res.text();
-            },
-            addStyle(textContent) {
-                const style = Object.assign(document.createElement('style'), { textContent });
-                const ref = document.head.getElementsByTagName('style')[0] || null;
-                document.head.insertBefore(style, ref);
-            },
-        }
-        const { loadModule } = window["vue3-sfc-loader"];
+  <script>
+    const options = {
+      moduleCache: {
+        vue: Vue
+      },
+      async getFile(url) {
+        const res = await fetch(url);
+        if (!res.ok)
+          throw Object.assign(new Error(res.statusText + ' ' + url), { res });
+        return await res.text();
+      },
+      addStyle(textContent) {
+        const style = Object.assign(document.createElement('style'), { textContent });
+        const ref = document.head.getElementsByTagName('style')[0] || null;
+        document.head.insertBefore(style, ref);
+      },
+    }
+    const { loadModule } = window["vue3-sfc-loader"];
 
-</script>
+  </script>
 
-  </head>
-  <body>
-    <div id="app">
-      <router-view></router-view>
-    </div>
-    <script src="index.js"></script> 
+</head>
 
-  </body>
+<body>
+  <div id="app">
+    <router-view></router-view>
+  </div>
+  <script src="index.js"></script>
+
+</body>
+
 </html>
